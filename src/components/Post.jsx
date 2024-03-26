@@ -1,15 +1,15 @@
+import { Avatar } from "./Avatar";
+import { Comment } from "./Comment";
 import styles from "./Post.module.css";
+
 export function Post() {
   return (
     <article className={styles.post}>
       <header>
         <div className={styles.author}>
-          <img
-            className={styles.avatar}
-            src="https://github.com/briansiervi.png"
-          />
+          <Avatar src="https://images.unsplash.com/photo-1529421308418-eab98863cee4?q=80&w=200&auto=format&fit=crop" />
           <div className={styles.authorInfo}>
-            <strong>Brian Mazini</strong>
+            <strong>Devon</strong>
             <span>Web Developer</span>
           </div>
         </div>
@@ -43,6 +43,12 @@ export function Post() {
           <button type="submit">Publicar</button>
         </footer>
       </form>
+
+      <div className={styles.commentList}>
+        <Comment />
+        <Comment />
+        <Comment />
+      </div>
     </article>
   );
 }
