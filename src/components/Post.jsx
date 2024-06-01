@@ -43,7 +43,7 @@ export function Post({ author, publishedAt, content }) {
   }
 
   function handleNewCommentInvalid() {
-    event.target.setCustomValidity("teste");
+    event.target.setCustomValidity("Preencha o comentário");
   }
 
   const isNewCommentEmpty = newCommentText.length === 0;
