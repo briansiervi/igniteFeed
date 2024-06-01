@@ -25,7 +25,7 @@ export function Comment({ content, onDeleteComment }: CommentProps) {
     <div className={styles.comment}>
       <Avatar
         hasBorder={false}
-        src="https://github.com/briansiervi.png"
+        src="https://images.unsplash.com/photo-1575089976121-8ed7b2a54265?q=80&w=200&auto=format&fit=crop"
         alt=""
       />
 
@@ -33,7 +33,7 @@ export function Comment({ content, onDeleteComment }: CommentProps) {
         <div className={styles.commentContent}>
           <header>
             <div className={styles.authorAndTime}>
-              <strong>Brian Mazini</strong>
+              <strong>Philip</strong>
               <time
                 title="22 de Março às 17:40h"
                 dateTime="2024-03-22 17:40:00"
